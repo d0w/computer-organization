@@ -6,13 +6,16 @@
 main()
 {
   int var_int;                    // 2
+  unsigned int var_unsigned_int;
 	short int var_short_int;
   unsigned short int var_unsigned_short_int;
-  unsigned int var_unsigned_int;
   long int var_long_int;
   unsigned long int var_unsigned_long_int;
   long long int var_long_long_int;
   unsigned long long int var_unsigned_long_long_int;
+  char var_char;
+  unsigned char var_unsigned_char;
+  signed char var_signed_char;
 
 
   unsigned char uchar1, uchar2;   // 3
@@ -39,14 +42,17 @@ main()
   // 2 -- find sizes of the other C datatypes
   printf("\n\n PART 2 ----------\n");
 
-  printf("\n size of data type int = %d ", sizeof(var_int));
+  printf("\n size of data type int (implicitly signed) = %d ", sizeof(var_int));
   printf("\n size of data type short int = %d ", sizeof(var_short_int));
   printf("\n size of data type unsigned short int = %d ", sizeof(var_unsigned_short_int));
   printf("\n size of data type unsigned int = %d ", sizeof(var_unsigned_int));
   printf("\n size of data type long int = %d ", sizeof(var_long_int));
   printf("\n size of data type unsigned long int = %d ", sizeof(var_unsigned_long_int));
-  printf("\n size of data type long long int = %d ", sizeof(var_long_long_int));
+  printf("\n size of data type long long int  = %d ", sizeof(var_long_long_int));
   printf("\n size of data type unsigned long long int = %d ", sizeof(var_unsigned_long_long_int));
+  printf("\n size of data type char = %d ", sizeof(var_char));
+  printf("\n size of data type unsigned char = %d ", sizeof(var_unsigned_char));
+  printf("\n size of data type signed char = %d ", sizeof(var_signed_char));
 
 
   // 3 -- explore signed versus unsigned datatypes and their interactions
